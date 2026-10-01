@@ -1,0 +1,37 @@
+{
+    "version": "0.7.40",
+    "description": "Native multi-cluster Kubernetes dashboard for Azure AKS fleets",
+    "homepage": "https://github.com/aavishay/aks-multicluster-dashboard",
+    "license": "AGPL-3.0-only",
+    "notes": [
+        "Reads the contexts already in your kubeconfig (%USERPROFILE%\\.kube\\config, or $env:KUBECONFIG).",
+        "AKS sign-in goes through Azure's kubelogin: scoop install azure-kubelogin, or az aks install-cli.",
+        "Needs the Microsoft Edge WebView2 runtime, which Windows 11 and an up-to-date Windows 10 already have."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/aavishay/aks-multicluster-dashboard/releases/download/v0.7.40/AKS-Fleet-Dashboard-0.7.40-x64-setup.exe#/dl.7z",
+            "hash": "45288c9d8d3df07add51c5b0638c26f63c87c9803738fb7cf569bda3cc995311"
+        }
+    },
+    "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe\" -Recurse -Force -ErrorAction SilentlyContinue",
+    "shortcuts": [
+        [
+            "k8s-view.exe",
+            "AKS Fleet Dashboard"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/aavishay/aks-multicluster-dashboard"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/aavishay/aks-multicluster-dashboard/releases/download/v$version/AKS-Fleet-Dashboard-$version-x64-setup.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS-windows.txt"
+        }
+    }
+}
