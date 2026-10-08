@@ -1,5 +1,5 @@
 {
-    "version": "0.7.46",
+    "version": "0.7.47",
     "description": "Native multi-cluster Kubernetes dashboard for Azure AKS fleets",
     "homepage": "https://github.com/aavishay/aks-multicluster-dashboard",
     "license": "AGPL-3.0-only",
@@ -33,5 +33,7 @@
         "hash": {
             "url": "$baseurl/SHA256SUMS-windows.txt"
         }
-    }
+    },
+    "url": "https://github.com/aavishay/aks-multicluster-dashboard/releases/download/v0.7.47/AKS-Fleet-Dashboard-0.7.47-x64-setup.exe#/dl.7z",
+    "hash": "a7557f2df0fe43ef592c7d0057bfeb34ef53f2be2623fb7dc027ca811b8428cf"
 }
