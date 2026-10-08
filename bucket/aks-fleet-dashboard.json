@@ -10,8 +10,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/aavishay/aks-multicluster-dashboard/releases/download/v0.7.46/AKS-Fleet-Dashboard-0.7.46-x64-setup.exe#/dl.7z",
-            "hash": "4cd70ba90d8ada42e9737475aa8a6c089651b010ad69e9a8cce38f20cde96287"
+            "url": "https://github.com/aavishay/aks-multicluster-dashboard/releases/download/v0.7.47/AKS-Fleet-Dashboard-0.7.47-x64-setup.exe#/dl.7z",
+            "hash": "a7557f2df0fe43ef592c7d0057bfeb34ef53f2be2623fb7dc027ca811b8428cf"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe\" -Recurse -Force -ErrorAction SilentlyContinue",
@@ -33,7 +33,5 @@
         "hash": {
             "url": "$baseurl/SHA256SUMS-windows.txt"
         }
-    },
-    "url": "https://github.com/aavishay/aks-multicluster-dashboard/releases/download/v0.7.47/AKS-Fleet-Dashboard-0.7.47-x64-setup.exe#/dl.7z",
-    "hash": "a7557f2df0fe43ef592c7d0057bfeb34ef53f2be2623fb7dc027ca811b8428cf"
+    }
 }
