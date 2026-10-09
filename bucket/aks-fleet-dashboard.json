@@ -1,5 +1,5 @@
 {
-    "version": "0.7.50",
+    "version": "0.7.51",
     "description": "Native multi-cluster Kubernetes dashboard for Azure AKS fleets",
     "homepage": "https://github.com/aavishay/aks-multicluster-dashboard",
     "license": "AGPL-3.0-only",
@@ -10,8 +10,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/aavishay/aks-multicluster-dashboard/releases/download/v0.7.50/AKS-Fleet-Dashboard-0.7.50-x64-setup.exe#/dl.7z",
-            "hash": "972e90cdeef65fc37da9adb9e148c93ff24cb1d5eaef0f8161bbbb5b36c2123b"
+            "url": "https://github.com/aavishay/aks-multicluster-dashboard/releases/download/v0.7.51/AKS-Fleet-Dashboard-0.7.51-x64-setup.exe#/dl.7z",
+            "hash": "1d78d8cb9e1530ea434f768948b0847e53676152fb9de9534cac02e83ff98adb"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe\" -Recurse -Force -ErrorAction SilentlyContinue",
